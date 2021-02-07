@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'MyriadPro-Bold';
+  src: url("./fonts/MYRIADPRO-BOLD.OTF");
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  text-decoration: none;
+}
+
+y
+#nav-logo {
+  width: auto;
+  height: 70px;
+  -webkit-filter: drop-shadow(7px 8px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(7px 8px 4px rgba(0, 0, 0, 0.25));
+}
+
+.nav-links {
+  list-style-type: none;
+  font-family: MyriadPro-Bold, sans-serif;
+}
+
+.nav-links li {
+  display: inline-block;
+  font-size: 24px;
+}
+
+.nav-links li a {
+  color: white;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+  color: #C5B783;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #0C2340;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 18px;
+}
+/*# sourceMappingURL=styles.css.map */

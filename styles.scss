@@ -1,0 +1,53 @@
+$bosco-blue: #0C2340;
+$tribe-blue: #3C6599;
+$bosco-gold: #C5B783;
+$tribe-gold: #CCCC99;
+$text: #4C5B67;
+
+@font-face{
+    font-family: 'MyriadPro-Bold';
+    src: url('./fonts/MYRIADPRO-BOLD.OTF');
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+}
+y
+// nav bar
+#nav-logo{
+    width: auto;
+    height: 70px;
+    filter: drop-shadow(7px 8px 4px rgba(0, 0, 0, 0.25));
+}
+
+.nav-links{
+    list-style-type: none;
+    font-family: MyriadPro-Bold, sans-serif;    
+}
+
+.nav-links li {
+    display: inline-block;
+    font-size: 24px;
+}
+
+.nav-links li a{
+    color: white;
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover{
+    color: $bosco-gold;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: $bosco-blue;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 18px;
+}
