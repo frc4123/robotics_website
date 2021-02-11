@@ -15,7 +15,7 @@ $text: #4C5B67;
     padding: 0%;
     text-decoration: none;
 }
-y
+
 // nav bar
 #nav-logo{
     width: auto;
@@ -25,7 +25,8 @@ y
 
 .nav-links{
     list-style-type: none;
-    font-family: MyriadPro-Bold, sans-serif;    
+    font-family: MyriadPro-Bold, sans-serif;  
+    word-spacing: 2.5rem;  
 }
 
 .nav-links li {
@@ -50,4 +51,5 @@ header{
     padding-left: 8%;
     padding-right: 8%;
     padding-top: 18px;
+    padding-bottom: 18px;
 }
