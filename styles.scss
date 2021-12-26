@@ -16,11 +16,24 @@ $text: #4C5B67;
     text-decoration: none;
 }
 
-// nav bar
 #nav-logo{
-    width: auto;
+    width: 79px;
     height: 70px;
     filter: drop-shadow(7px 8px 4px rgba(0, 0, 0, 0.25));
+}
+
+.gold-font{
+    color: $bosco-gold !important;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    font-family: MyriadPro-Bold, sans-serif;  
+    color: white;
+    font-size: 24px;
 }
 
 .nav-links{
@@ -43,13 +56,14 @@ $text: #4C5B67;
     color: $bosco-gold;
 }
 
-header{
+header, footer{
     display: flex;
     justify-content: space-between;
     align-items:center;
+    
     background-color: $bosco-blue;
     padding-left: 8%;
     padding-right: 8%;
-    padding-top: 18px;
-    padding-bottom: 18px;
+    padding-top: 1.125rem;
+    padding-bottom: 1.125rem;
 }
