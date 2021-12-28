@@ -1,3 +1,15 @@
-This is just me expirementing with creating a website in html, I will probably self host for a while.
+Creating our website in HTML for practice.
 
-The new and updated website is hosted on https://frc4123.lovestoblog.com in the meantime while we develop it and transfer our main domain.
+Figma reference:
+
+### Home page
+![](./repo_images/Home%20page%20-%20FRC%204123.png)
+
+### Robots
+![](./repo_images/Robots.png)
+
+### Sponsors
+![](./repo_images/Sponsors.png)
+
+### Updates
+![](./repo_images/Updates.png)
