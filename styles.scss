@@ -67,6 +67,8 @@ $text: #4C5B67;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-left: 23%;
+    padding-right: 23%;
 }
 
 #index-header-headings {
@@ -74,9 +76,11 @@ $text: #4C5B67;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin: 2% 0% 2% 0%;
 }
 
-#index-header-headings h2, #index-header-headings span{
+#index-header-headings h2,
+#index-header-headings span {
     font-family: Bebas Neue, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -84,15 +88,35 @@ $text: #4C5B67;
     font-size: 5.75rem;
 }
 
-#index-header-headings h3{
+#index-header-headings h3 {
     font-family: Oswald, sans-serif;
     line-height: 316.7%;
-    letter-spacing: 0.145em;
+    letter-spacing: 0.3em;
 }
 
 #index-banner-image {
     display: flex;
     justify-content: center;
+}
+
+#index-banner-image picture {
+    max-width: 1585px;
+}
+
+#index-banner-image picture img {
+    width: 100%;
+    height: auto;
+}
+
+#index-body-header {
+    padding-top: 0px;
+    align-items: flex-start;
+}
+
+#index-body-header h1 {
+    font-family: Bebas Neue, sans-serif;
+    font-weight: bold;
+    font-size: 45px;
 }
 
 #index-body {
@@ -106,19 +130,18 @@ $text: #4C5B67;
 #index-body-image {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 50%;
 }
 
 #index-body-text {
     align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
 }
 
-#index-body-header h1 {
-    font-family: Bebas Neue, sans-serif;
-    font-weight: bold;
-    font-size: 45px;
+#index-body-image{
+    justify-content: center;
+    align-items: center;
 }
 
 #index-footer-images {

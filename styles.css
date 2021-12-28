@@ -82,6 +82,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 23%;
+  padding-right: 23%;
 }
 
 #index-header-headings {
@@ -98,9 +100,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 2% 0% 2% 0%;
 }
 
-#index-header-headings h2, #index-header-headings span {
+#index-header-headings h2,
+#index-header-headings span {
   font-family: Bebas Neue, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -111,7 +115,7 @@
 #index-header-headings h3 {
   font-family: Oswald, sans-serif;
   line-height: 316.7%;
-  letter-spacing: 0.145em;
+  letter-spacing: 0.3em;
 }
 
 #index-banner-image {
@@ -121,6 +125,28 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+#index-banner-image picture {
+  max-width: 1585px;
+}
+
+#index-banner-image picture img {
+  width: 100%;
+  height: auto;
+}
+
+#index-body-header {
+  padding-top: 0px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#index-body-header h1 {
+  font-family: Bebas Neue, sans-serif;
+  font-weight: bold;
+  font-size: 45px;
 }
 
 #index-body {
@@ -148,12 +174,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 50%;
 }
 
@@ -161,12 +181,19 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
 }
 
-#index-body-header h1 {
-  font-family: Bebas Neue, sans-serif;
-  font-weight: bold;
-  font-size: 45px;
+#index-body-image {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #index-footer-images {
