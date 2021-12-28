@@ -4,66 +4,193 @@ $bosco-gold: #C5B783;
 $tribe-gold: #CCCC99;
 $text: #4C5B67;
 
-@font-face{
+@font-face {
     font-family: 'MyriadPro-Bold';
-    src: url('./fonts/MYRIADPRO-BOLD.OTF');
+    src: url('./resources/fonts/MYRIADPRO-BOLD.OTF');
 }
 
-*{
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('./resources/fonts/BebasNeue-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('./resources/fonts/Oswald-Regular.ttf');
+}
+
+* {
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
     text-decoration: none;
+    font-family: MyriadPro-Bold, sans-serif;
+    border: 1px solid black;
+    list-style-type: none;
 }
 
-#nav-logo{
+#nav-logo {
     width: 79px;
     height: 70px;
     filter: drop-shadow(7px 8px 4px rgba(0, 0, 0, 0.25));
 }
 
-.gold-font{
-    color: $bosco-gold !important;
-}
-
-nav{
+#nav-logo-tagline {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    list-style-type: none;
-    font-family: MyriadPro-Bold, sans-serif;  
-    color: white;
-    font-size: 24px;
+    width: 24%;
 }
 
-.nav-links{
+#nav-links {
     list-style-type: none;
-    font-family: MyriadPro-Bold, sans-serif;  
-    word-spacing: 2.5rem;  
+    word-spacing: 5rem;
 }
 
-.nav-links li {
+#nav-links li {
     display: inline-block;
     font-size: 24px;
 }
 
-.nav-links li a{
+#nav-links li a {
     color: white;
     transition: all 0.3s ease 0s;
 }
 
-.nav-links li a:hover{
+#nav-links li a:hover {
     color: $bosco-gold;
 }
 
-header, footer{
+#index-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#index-header-headings {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#index-header-headings h2, #index-header-headings span{
+    font-family: Bebas Neue, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 110px;
+    font-size: 5.75rem;
+}
+
+#index-header-headings h3{
+    font-family: Oswald, sans-serif;
+    line-height: 316.7%;
+    letter-spacing: 0.145em;
+}
+
+#index-banner-image {
+    display: flex;
+    justify-content: center;
+}
+
+#index-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#index-body-text,
+#index-body-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+#index-body-text {
+    align-items: flex-start;
+}
+
+#index-body-header h1 {
+    font-family: Bebas Neue, sans-serif;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+#index-footer-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#footer-bosco-info,
+#footer-tribe-info,
+#footer-contact {
+    display: flex;
+    flex: 1 1 0;
+
+}
+
+#footer-bosco-info {
+    flex-direction: row;
+    align-items: center;
+    margin-right: auto;
+}
+
+#footer-tribe-info {
+    justify-content: space-around;
+}
+
+#footer-contact {
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+
+#footer-contact ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.gold-font {
+    color: $bosco-gold !important;
+}
+
+.round {
+    border-radius: 40px;
+}
+
+nav {
     display: flex;
     justify-content: space-between;
-    align-items:center;
-    
+    align-items: center;
+    flex-direction: row;
+    list-style-type: none;
+    font-size: 24px;
+}
+
+footer {
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    // flex-direction: row;
+    border-top-style: solid;
+    border-top-color: $bosco-gold;
+}
+
+
+
+header,
+footer {
     background-color: $bosco-blue;
     padding-left: 8%;
     padding-right: 8%;
     padding-top: 1.125rem;
     padding-bottom: 1.125rem;
+    color: white;
 }
