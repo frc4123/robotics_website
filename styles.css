@@ -1,6 +1,13 @@
 @font-face {
-  font-family: 'MyriadPro-Bold';
-  src: url("./resources/fonts/MYRIADPRO-BOLD.OTF");
+  font-family: 'Myriad Pro Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Myriad Pro Bold"), url("./resources/fonts/MYRIADPRO-BOLD.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Myriad Pro Regular';
+  src: local("Myriad Pro Regular"), url("./resources/fonts/MYRIADPRO-REGULAR.woff") format("woff");
 }
 
 @font-face {
@@ -19,8 +26,7 @@
   margin: 0%;
   padding: 0%;
   text-decoration: none;
-  font-family: MyriadPro-Bold, sans-serif;
-  border: 1px solid black;
+  font-family: 'Myriad Pro Bold', sans-serif;
   list-style-type: none;
 }
 
@@ -87,6 +93,7 @@
 }
 
 #index-header-headings {
+  color: #0C2340;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,6 +108,10 @@
       -ms-flex-align: center;
           align-items: center;
   margin: 2% 0% 2% 0%;
+}
+
+#index-header-headings h2 {
+  color: #0C2340;
 }
 
 #index-header-headings h2,
@@ -138,6 +149,7 @@
 
 #index-body-header {
   padding-top: 0px;
+  padding-left: 23%;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -145,11 +157,14 @@
 
 #index-body-header h1 {
   font-family: Bebas Neue, sans-serif;
+  color: #0C2340;
   font-weight: bold;
   font-size: 45px;
 }
 
 #index-body {
+  margin-top: 2%;
+  margin-bottom: 8%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -187,6 +202,15 @@
   height: 100%;
 }
 
+.index-body-text {
+  line-height: 2rem;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-family: 'Myriad Pro Regular', sans-serif;
+  padding: 2% 2% 2% 23%;
+  color: #4C5B67;
+}
+
 #index-body-image {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -210,6 +234,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 8%;
 }
 
 #footer-bosco-info,
@@ -239,6 +264,10 @@
       justify-content: space-around;
 }
 
+#footer-address {
+  padding-left: 4%;
+}
+
 #footer-contact {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
@@ -250,6 +279,14 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+#footer-contact p {
+  margin-bottom: 6%;
+}
+
+#footer-contact ul li img {
+  width: 85%;
 }
 
 #footer-contact ul {
